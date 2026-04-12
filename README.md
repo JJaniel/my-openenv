@@ -1,3 +1,13 @@
+---
+title: Email Triage OpenEnv
+emoji: 📧
+colorFrom: blue
+colorTo: purple
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # 📧 Email Triage OpenEnv: Enterprise Workflow RL
 ### *Real-World Reinforcement Learning for Automated Triage & Entity Extraction*
 
