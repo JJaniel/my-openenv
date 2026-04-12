@@ -1,0 +1,12 @@
+[
+    {"subject": "BUG: Enterprise checkout broken", "body": "URGENT: Major bug found in the enterprise checkout flow. Please fix immediately.", "category": 0, "priority": 1},
+    {"subject": "New features for our plan?", "body": "We are a large company interested in your roadmap for the next quarter.", "category": 1, "priority": 2},
+    {"subject": "Minor bug in mobile view", "body": "The sidebar is slightly cut off on iPhone 13. Not critical but annoying.", "category": 0, "priority": 3},
+    {"subject": "Suggestion for dark mode", "body": "Can you add a dark mode to the next release? Many users are asking for it.", "category": 2, "priority": 3},
+    {"subject": "Urgent: Billing discrepancy", "body": "I was charged twice for the Platinum subscription this month. Please resolve.", "category": 1, "priority": 1},
+    {"subject": "Internal update: OFFICE-05", "body": "New desk assignments for the OFFICE-05 floor are now live in the system.", "category": 3, "priority": 3},
+    {"subject": "Partnership Inquiry", "body": "Interested in exploring a strategic partnership for the EMEA region.", "category": 1, "priority": 2},
+    {"subject": "Beta testing feedback", "body": "The beta version is stable, but the onboarding flow could be smoother.", "category": 2, "priority": 3},
+    {"subject": "Critical Security Patch", "body": "Please apply the latest security patch to all production servers by EOD.", "category": 0, "priority": 1},
+    {"subject": "Team Lunch", "body": "Don't forget the team lunch tomorrow at 12:30 PM at the Italian place.", "category": 3, "priority": 3}
+]

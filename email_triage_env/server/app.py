@@ -1,0 +1,17 @@
+from openenv.core.env_server import create_fastapi_app
+from .environment import EmailTriageEnv
+from ..models import EmailAction, EmailObservation
+import uvicorn
+
+# Initialize the FastAPI app
+app = create_fastapi_app(
+    env=EmailTriageEnv,
+    action_cls=EmailAction,
+    observation_cls=EmailObservation,
+)
+
+def main():
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,12 @@
+[
+    {"subject": "Password reset link", "body": "Hi, I cannot log into the Oracle HR system. It says my password has expired but the 'reset' link is not sending an email.", "category": 0, "priority": 1},
+    {"subject": "Re: 2001 Margin Plan", "body": "Jeff, attached is the margin plan for the upcoming fiscal year. Please review the trading limits for the West Desk.", "category": 1, "priority": 2},
+    {"subject": "Headset connection issue", "body": "Dear Support, I am having trouble connecting my Bose headset to my QNAP NAS. I've tried restarting both devices.", "category": 0, "priority": 2},
+    {"subject": "I love the app", "body": "The new interface is so easy to use! Great job team.", "category": 2, "priority": 3},
+    {"subject": "Sync meeting", "body": "Let's meet tomorrow at 10 AM in the main conference room.", "category": 3, "priority": 3},
+    {"subject": "Pricing inquiry", "body": "What are your rates for a team of 50 users? Looking for a quote.", "category": 1, "priority": 2},
+    {"subject": "Feedback on mobile UI", "body": "The buttons are a bit small on smaller screens. Could you look into it?", "category": 2, "priority": 3},
+    {"subject": "Quarterly Review", "body": "Please find the draft for the Q3 performance review attached. Review by Friday.", "category": 3, "priority": 2},
+    {"subject": "Login Error: ERR-403", "body": "Keep getting a 403 Forbidden error when trying to access the dashboard.", "category": 0, "priority": 1},
+    {"subject": "Enterprise Plan Quote", "body": "We're interested in upgrading to the Enterprise plan. Can we schedule a call?", "category": 1, "priority": 2}
+]
