@@ -10,6 +10,10 @@ app = create_fastapi_app(
     observation_cls=EmailObservation,
 )
 
+@app.get("/")
+def health_check():
+    return {"status": "ok", "message": "Email Triage OpenEnv is running"}
+
 def main():
     uvicorn.run(app, host="0.0.0.0", port=7860)
 
