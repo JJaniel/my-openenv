@@ -41,12 +41,12 @@ The environment is built on the **Meta OpenEnv** framework, exposing a standard 
 │   ├── datasets/           # 📦 Curated Real-World Samples (JSON)
 │   ├── server/
 │   │   ├── environment.py  # 🧠 Core Logic & Grader (0.0 - 1.0 Reward)
-│   │   └── app.py          # 🌐 FastAPI Entry Point
+│   │   └── app.py          # 🌐 FastAPI Entry Point (Port 7860)
 │   ├── models.py           # 🏗️ Type-safe Pydantic Schemas
 │   ├── openenv.yaml        # ⚙️ OpenEnv Configuration
 │   └── pyproject.toml      # 🛠️ Dependency Management
 ├── inference.py            # 📊 Standardized Scorer (START/STEP/END logs)
-└── Dockerfile              # 🐳 Deployment Manifest
+└── Dockerfile              # 🐳 Deployment Manifest (Hugging Face Optimized)
 ```
 
 ---
