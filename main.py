@@ -1,5 +1,5 @@
 import uvicorn
-from email_triage_env.server.app import app
+from server.app import app
 
 def main():
     print("Starting Email Triage Environment Server...")

@@ -23,6 +23,6 @@ log "${BOLD}Step 2/3: Running docker build${NC} ..."
 if docker build -t email-triage-test .; then pass "Docker build succeeded"; else fail "Docker build failed"; stop_at "Step 2"; fi
 
 log "${BOLD}Step 3/3: Running openenv validate${NC} ..."
-if openenv validate email_triage_env; then pass "openenv validate passed"; else fail "openenv validate failed"; stop_at "Step 3"; fi
+if openenv validate .; then pass "openenv validate passed"; else fail "openenv validate failed"; stop_at "Step 3"; fi
 
 printf "\n${GREEN}${BOLD}  All checks passed locally! Ready for HF deployment.${NC}\n"

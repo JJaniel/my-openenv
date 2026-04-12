@@ -16,12 +16,12 @@ def check_file(path: str):
 def validate_structure():
     print("\n--- Step 1: Structure Check ---")
     required = [
-        "email_triage_env/models.py",
-        "email_triage_env/openenv.yaml",
-        "email_triage_env/pyproject.toml",
-        "email_triage_env/uv.lock",
-        "email_triage_env/server/environment.py",
-        "email_triage_env/server/app.py",
+        "models.py",
+        "openenv.yaml",
+        "pyproject.toml",
+        "uv.lock",
+        "server/environment.py",
+        "server/app.py",
         "inference.py",
         "Dockerfile"
     ]
@@ -72,7 +72,7 @@ def validate_openenv():
     print("\n--- Step 3: openenv validate Check ---")
     try:
         result = subprocess.run(
-            ["openenv", "validate", "email_triage_env"], 
+            ["openenv", "validate", "."], 
             capture_output=True, 
             text=True
         )

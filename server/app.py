@@ -1,6 +1,6 @@
 from openenv.core.env_server import create_fastapi_app
-from .environment import EmailTriageEnv
-from ..models import EmailAction, EmailObservation
+from server.environment import EmailTriageEnv
+from models import EmailAction, EmailObservation
 import uvicorn
 
 # Initialize the FastAPI app

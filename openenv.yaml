@@ -3,8 +3,8 @@ version: 0.1.0
 description: A mini RL environment for email triage and prioritization.
 
 server:
-  module: email_triage_env.server.app
+  module: server.app
   port: 7860
 
 models:
-  module: email_triage_env.models
+  module: models

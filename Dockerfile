@@ -8,7 +8,7 @@ ENV PATH="/home/user/.local/bin:$PATH"
 WORKDIR /app
 
 # Copy dependency files and install
-COPY --chown=user email_triage_env/pyproject.toml /app/email_triage_env/pyproject.toml
+COPY --chown=user pyproject.toml /app/pyproject.toml
 RUN pip install --no-cache-dir openenv-core gymnasium pydantic fastapi uvicorn openai
 
 # Copy the entire project structure
@@ -21,4 +21,4 @@ ENV PYTHONPATH=/app
 EXPOSE 7860
 
 # Default command: run the environment server on port 7860
-CMD ["uvicorn", "email_triage_env.server.app:app", "--host", "0.0.0.0", "--port", "7860"]
+CMD ["uvicorn", "server.app:app", "--host", "0.0.0.0", "--port", "7860"]

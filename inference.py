@@ -9,8 +9,8 @@ from openai import OpenAI
 # Add current directory to path
 sys.path.append(os.getcwd())
 
-from email_triage_env.server.environment import EmailTriageEnv
-from email_triage_env.models import EmailAction
+from server.environment import EmailTriageEnv
+from models import EmailAction
 
 # MANDATORY CONFIGURATION
 API_BASE_URL = os.getenv("API_BASE_URL") or "https://router.huggingface.co/v1"

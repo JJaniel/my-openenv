@@ -3,7 +3,7 @@ import json
 import os
 from typing import List, Optional
 from openenv.core.env_server import Environment
-from ..models import EmailAction, EmailObservation, EmailState, EmailItem
+from models import EmailAction, EmailObservation, EmailState, EmailItem
 
 # Load real-world datasets from JSON files
 def load_dataset(filename: str):
