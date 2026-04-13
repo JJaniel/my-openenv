@@ -1,10 +1,49 @@
 name: email-triage-env
-version: 0.1.0
-description: A mini RL environment for email triage and prioritization.
+version: 0.2.0
+description: >
+  A production RL environment for automated enterprise email triage.
+  Features 3-tier difficulty (Easy/Medium/Hard) with real-world datasets
+  (Enron, IT Support, Endava). Tasks include categorization,
+  priority prediction, and entity extraction from free-text.
+
+author: JJaniel
+license: MIT
+tags: [nlp, classification, entity-extraction, enterprise, email, rl, gymnasium]
 
 server:
   module: server.app
   port: 7860
+  health_endpoint: /
+  reset_endpoint: /reset
+  step_endpoint: /step
+  state_endpoint: /state
 
 models:
   module: models
+  action: EmailAction
+  observation: EmailObservation
+  state: EmailState
+
+tasks:
+  - id: 1
+    name: Email Category Classification
+    difficulty: easy
+    reward_range: [0.0, 1.0]
+    description: Classify email into Support/Sales/Feedback/Internal
+  - id: 2
+    name: Priority Prediction
+    difficulty: medium
+    reward_range: [0.0, 1.0]
+    description: Predict High/Medium/Low urgency from contextual cues
+  - id: 3
+    name: Entity Extraction
+    difficulty: hard
+    reward_range: [0.0, 1.0]
+    description: Extract structured IDs (BUG-X, INC-X, PROJ-X, CONTRACT-X, etc.) from free text
+
+performance:
+  task_1_avg_reward: 0.80
+  task_2_avg_reward: 0.90
+  task_3_avg_reward: 0.86
+  baseline_model: Qwen/Qwen2.5-72B-Instruct
+  dataset_size_per_tier: 30
